@@ -1,0 +1,23 @@
+#cart {
+	margin-top: 30px;
+}
+
+.decrease-button {
+	margin-right: 20px;
+}
+
+.increase-button {
+  margin-left: 20px; 
+}
+
+#cart-heading {
+  margin-top: 3px;
+}
+
+#cart-panel-heading {
+  height: 50px;
+}
+
+.cart-item-price {
+  margin-top: 10px;
+}
