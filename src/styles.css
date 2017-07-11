@@ -15,9 +15,18 @@
 }
 
 #cart-panel-heading {
-  height: 50px;
+  height: 80px;
 }
 
 .cart-item-price {
   margin-top: 10px;
+}
+
+#toggle-arrow {
+  margin-top: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 760px) {
 }
