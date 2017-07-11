@@ -324,6 +324,25 @@
 	      updateCartTotals();
 	    });
 	  });
+
+	  // toggling cart logic
+	  var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+	  var arrow = document.getElementById('toggle-arrow');
+	  if (isMobile.matches) {
+	    $("#togglable-cart").hide();
+	    arrow.innerHTML = '<span class="glyphicon glyphicon-chevron-down"></span>';
+	  }
+	  $("#toggle-arrow").click(function () {
+	    $("#togglable-cart").toggle("blind");
+	    changeArrow();
+	  });
+	  function changeArrow() {
+	    if (arrow.innerHTML === '<span class="glyphicon glyphicon-chevron-up"></span>') {
+	      arrow.innerHTML = '<span class="glyphicon glyphicon-chevron-down"></span>';
+	    } else {
+	      arrow.innerHTML = '<span class="glyphicon glyphicon-chevron-up"></span>';
+	    }
+	  }
 	};
 
 /***/ })
